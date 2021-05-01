@@ -1,0 +1,14 @@
+<small *ngIf='invalidLogin'>{{errorMessage}}</small>
+<div>
+User Name :<input type="text" name="username" [(ngModel)]="username">
+Password  :<input type="password" name="password" [(ngModel)]="password">
+<!--Three types of data binding
+    Interpolation example
+Username: {{username}} //Component Property
+<button (click)=handleLogin()>Login</button> //Component Event
+[(ngModel)]="username" // Two way data binding
+ngModel= Angular directive
+-->
+
+<button (click)=handleLogin()>Login</button>
+</div>
